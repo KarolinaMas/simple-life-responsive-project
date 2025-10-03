@@ -1,0 +1,1 @@
+Techin kolegoms :) Šį projektą darius jau seniau mokindamasi Scrimba.com platformoje, kursas - Learn Responsive Web Design (mokamas). Čia projektas susidaro iš kelių puslapių, ne tik iš mums duotos About Me dalies. Daugumą kodo rašiau sekdama kurso medžiagą, kurią dėstė tikrai patikimas mokytojas Kevin Powell (yra ir jo Youtube kanalas).
