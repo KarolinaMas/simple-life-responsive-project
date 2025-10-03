@@ -1,0 +1,22 @@
+.hero {
+    border: 0;
+}
+
+.article-title {
+    margin-top: 2em;
+}
+
+.article-main-info h3 {
+    color: #1792d2;
+    font-size: 1.35rem;
+}
+
+.article-secondary-info img {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+
+footer {
+    margin-top: 3em;
+}

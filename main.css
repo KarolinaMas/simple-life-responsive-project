@@ -1,0 +1,289 @@
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ general
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+ body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #707070;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+ .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+  }
+
+  h3 {
+    line-height: 1.4;
+  }
+
+  .logo p,
+  .continue,
+  nav a {
+    color: #1792d2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+  }
+
+  /* /////////////////////////////////
+  header
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+ 
+  /* general */
+  header {
+    background-color: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  /* title */
+
+  .logo {
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: .8rem;
+  }
+  
+  /* navigation */
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-top: .3em;
+  }
+  
+  nav a {
+    color: #707070;
+    padding: .3em 0;
+    font-size: .85rem;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    color: blue;   
+  }
+  
+  .current-page {
+    border-bottom: 1px solid #707070;
+  }
+  
+  .current-page:hover {
+    color: #707070;
+  }
+
+  /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  main content
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+  /* general */
+  
+  .hero, article { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  main p,
+  article p {
+    font-size: 1.125;
+  }
+
+  .article-body a:hover,
+  .continue:hover {
+    color: #143774;
+    text-decoration: underline;
+  }
+
+  .article-info,
+  .continue {
+    font-size: 0.875rem;
+    margin: 2em 0;
+  }
+  
+  /* hero section */
+
+  .hero {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1.65em;
+  }
+  
+  /* article sections*/
+  
+  article {
+    margin: 2em 0;
+  }
+
+  .article-main-info {
+    order: 2;
+  }
+
+  .article-secondary-info {
+    order: 1;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .article-body span {
+    font-weight: 700;
+  }
+
+  .article-body a {
+    color: #1792d2;
+  }
+
+  /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  aside
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+  .aside-part {
+    border: 20px solid #EBEBEB;
+    padding: 1.25em;
+    margin-bottom: 4em;
+  }
+
+  .aside-title {
+    margin: 0 0 2em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.225em;
+    letter-spacing: .1em;
+    line-height: 1.3;
+  }
+
+  .about-me-img {
+    min-height: 130px;
+    object-fit: cover;
+  }
+
+  .recent-posts {
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1.5em;
+  }
+
+  .recent-posts:last-child {
+    border: 0;
+    margin: 0;
+  }
+
+  /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  footer
+  /////////////////////////////////// */
+
+  footer {
+    background-color: #143774;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    text-align: center;
+    padding: 3em 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .footer-name {
+    font-weight: 700;
+    margin-bottom: .5em;
+  }
+  /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  media query 
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+  @media (min-width: 819px) {
+    
+    nav ul {
+      flex-direction: row;
+      gap: 1.7em
+    }
+  
+    nav li {
+      margin: .3em 0 0 0;
+    }
+  }
+
+@media (min-width: 860px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin: .3em 0 0 2em;
+    gap: 0;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  .sidebar {
+    width: 25%;
+  }
+
+  .secondary-article {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .secondary-article .article-main-info {
+    width: 70%;
+  }
+
+  .secondary-article .article-secondary-info {
+    width: 25%;
+  }
+
+  article img {
+    min-height: 230px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  article .img-left {
+    object-position: left;
+  }
+}
+
